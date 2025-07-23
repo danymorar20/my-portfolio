@@ -1,4 +1,4 @@
-import ExperienceList from "@/components/sections/experience-list";
+import ExperienceList from "@/presentation/components/sections/experience-list";
 
 export default function ExperiencePage() {
   return (

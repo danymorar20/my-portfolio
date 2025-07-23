@@ -1,4 +1,4 @@
-import GithubRepos from "@/components/sections/github-repos";
+import GithubRepos from "@/presentation/components/sections/github-repos";
 
 export default function ProjectsPage() {
   return (

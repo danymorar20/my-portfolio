@@ -1,36 +1,11 @@
 "use client"
 
 import { useTranslation } from "react-i18next";
+import { getExperienceList } from "@/application/use-cases/get-experience.use-case";
 
 export default function ExperienceList() {
   const { t } = useTranslation();
-  const experience = [
-    {
-      company: "Minu",
-      role: "Backend Engineer",
-      date: "June 2025 - July 2025",
-      description: t("minu-description")
-    },
-    {
-      company: "Macropay",
-      role: "Backend Developer",
-      date: "May 2024 - June 2025",
-      description: t("macropay-description")
-    },
-    {
-      company: "BlackSpot",
-      role: "FullStack Developer",
-      date: "March 2023 - May 2024",
-      description: t("blackspot-description")
-    },
-    {
-      company: "Freelancer",
-      role: "FullStack Developer",
-      date: t("freelancer-date"),
-      description: t("freelancer-description")
-    },
-  ];
-
+  const experience = getExperienceList(t);
   return (
     <div>
       <h1 className="text-3xl font-bold mb-4">{t("experience-title")}</h1>
