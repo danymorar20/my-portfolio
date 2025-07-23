@@ -1,8 +1,8 @@
 "use client";
 
-import Hero from "@/presentation/components/sections/Hero";
-import SkillsCarousel from "@/presentation/components/sections/SkillsCarousel";
-import FeaturedSites from "@/presentation/components/sections/FeaturedSites";
+import Hero from "@/presentation/components/sections/hero";
+import SkillsCarousel from "@/presentation/components/sections/skills-carousel";
+import FeaturedSites from "@/presentation/components/sections/featured-sites";
 
 export default function HomePage() {
   return (
