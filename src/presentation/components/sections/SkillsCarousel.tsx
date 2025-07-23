@@ -3,7 +3,7 @@
 import Marquee from "react-fast-marquee";
 import { useTranslation } from "react-i18next";
 import { skills } from "@/infrastructure/data/skills";
-import SkillItem from "./skillItem";
+import SkillItem from "./SkillItem";
 
 export default function SkillsCarousel() {
   const { t } = useTranslation();
