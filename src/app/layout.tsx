@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Metadata } from "next";
 import Navbar from "@/presentation/components/ui/Navbar";
 import Footer from "@/presentation/components/ui/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
